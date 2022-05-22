@@ -1,0 +1,10 @@
+@media only screen and (max-width: 750px) {
+	#LeftSection {
+		display: none;
+		/* background-color: blue; */
+	}
+
+	#LeftSection.active {
+		display: flex;
+	}
+}

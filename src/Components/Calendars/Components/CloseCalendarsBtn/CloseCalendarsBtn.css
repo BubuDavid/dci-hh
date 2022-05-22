@@ -1,0 +1,37 @@
+.CloseCalendarsBtn {
+	background-color: white;
+	border: 1px solid #FFC900;
+	color: black;
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+	border-radius: 10rem;
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	font-size: 1rem;
+	vertical-align: center;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 0 1rem;
+	transition: all 300ms;
+}
+
+.CloseCalendarsBtn:hover {
+	transform: scale(1.04);
+	background-color: #FFC900;
+	border: 1px solid none;
+	color: white;
+}
+
+.CloseCalendarsBtn span {
+	font-size: 1.2rem;
+	margin-right: 0.3rem;
+}
+
+
+@media only screen and (max-width: 750px) {
+	.CloseCalendarsBtn span, .CloseCalendarsBtn {
+		font-size: 0.8rem;
+	}
+}

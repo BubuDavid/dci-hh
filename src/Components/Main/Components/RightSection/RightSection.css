@@ -1,0 +1,10 @@
+@media only screen and (max-width: 750px) {
+	#RightSection {
+		display: none;
+		/* background-color: blue; */
+	}
+
+	#RightSection.active {
+		display: flex;
+	}
+}

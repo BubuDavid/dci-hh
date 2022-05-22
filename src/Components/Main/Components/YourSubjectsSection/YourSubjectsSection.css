@@ -1,0 +1,74 @@
+.YourSubjectsSection {
+	margin-top: 1rem;
+	top: 2rem;
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.BeesCounter {
+	width: max-content;
+	border-radius: 10px;
+}
+
+.BeesCounterIcon {
+	font-size: 1.5rem;
+	transition: all 300ms ease-in-out;
+}
+
+.BeesCounter.Error {
+	outline: 0;
+	opacity: 1;
+  border-color: #EB5353;
+	background-color: #EB5353;
+  animation-name: bounce;
+  animation-duration: .5s;
+}
+
+.YourSubjectList {
+	width: 50%;
+}
+
+.YourSubjectList .SubjectP{
+	font-size: 1rem;
+}
+
+.YourSubjectList .SubjectIcon{
+	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 750px) {
+	.YourSubjectsSection {
+		position: relative;
+		top: 0;
+		margin-top: 0;
+	}
+	.BeesCounterIcon {
+		font-size: 2rem;
+	}
+
+	.YourSubjectList .SubjectP {
+		font-size: 0.8rem;
+	}
+
+	.YourSubjectList .SubjectIcon {
+		font-size: 1.6rem;
+	}
+
+	.YourSubjectList {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.BeesCounterIcon {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.BeesCounterIcon {
+		font-size: 1rem;
+	}
+}

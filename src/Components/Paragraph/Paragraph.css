@@ -1,0 +1,16 @@
+.Paragraph {
+	font-size: 1rem;
+	margin: 0;
+}
+
+@media only screen and (max-width: 750px) {
+	.Paragraph {
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.Paragraph {
+		font-size: 0.8rem;
+	}
+}
