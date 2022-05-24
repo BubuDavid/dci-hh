@@ -14,7 +14,9 @@ export default function MakeSchedulesBtn() {
 		setSchedules
 	} = useContext(HHContext)
 	const {
-		makeSchedules
+		makeSchedules,
+		scheduleLoading,
+		setScheduleLoading,
 	} = useCallHHAPI(schedules, setSchedules)
 
 	const makeSchedulesClick = async () => {
@@ -31,7 +33,7 @@ export default function MakeSchedulesBtn() {
 	}
 	return (
 		<button
-			className="MakeSchedulesBtn"
+			className={scheduleLoading ? "MakeSchedulesBtn Loading": "MakeSchedulesBtn"}
 			id={"SubmitButton"}
 			onClick={async () => await makeSchedulesClick()}
 			style={{
@@ -39,7 +41,9 @@ export default function MakeSchedulesBtn() {
 				pointerEvents: yourSubjects.length ? 'auto' : 'none'
 			}}
 		>
-			Hacer Horarios
+			{scheduleLoading ? <i className="LoadingIcon">🐝 </i> : "Hacer Horarios"}
+			{scheduleLoading ? " Cargando..." : ""}
+
 		</button>
 	)
 }

@@ -28,3 +28,20 @@
 		font-size: 1.4rem;
 	}
 }
+
+.LoadingIcon {
+	animation-name: rotating;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	transition: all 300ms ease-in;
+}
+
+@keyframes rotating {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

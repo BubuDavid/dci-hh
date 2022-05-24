@@ -68,6 +68,7 @@ function useCallHHAPI(schedules, setSchedules) {
 
 	return {
 		scheduleLoading,
+		setScheduleLoading,
 		scheduleError,
 		makeSchedules
 	}
