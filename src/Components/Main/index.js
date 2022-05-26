@@ -17,7 +17,7 @@ export default function Main() {
 		<div className='Main'>
 			<LeftSection>
 				<SectionTitle>
-					Materias Enero - Junio 2022
+					Materias Agosto - Diciembre 2022
 				</SectionTitle>
 				<Paragraph>
 					Pasos para sacar tus horarios:
