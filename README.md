@@ -19,5 +19,6 @@ Aunque esta herramienta saque todos los posibles horarios que no empalman, es po
 - 🔟 Puedes meter máximo 10 materias (si necesitas más, mandame mensaje a mi IG: [@david_bubu73](https://www.instagram.com/david_bubu73/)).
 - 🐢 Si das click en una materia seleccionada, se deselecciona.
 - Si hay algún problema con la página o con algún horario (digamos que encontraste uno que aparece en la plataforma), manda mensaje a mi IG: [@david_bubu73](https://www.instagram.com/david_bubu73/).
+- Puedes la Base de Datos que usé [aquí](https://airtable.com/shrH7rkYL0mgKdRfZ)
 
 # GRACIAS Y ESPERO QUE TE SIRVA.
