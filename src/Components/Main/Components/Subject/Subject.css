@@ -27,6 +27,10 @@
 	animation-duration: 0.5s;
 }
 
+.Subject.Selected .SubjectIcon {
+	opacity: 1;
+}
+
 .Subject:hover {
 	transform: scale(1.03);
 }
@@ -41,6 +45,7 @@
 .SubjectIcon {
 	margin: 0 1rem;
 	font-size: 2rem;
+	opacity: 0.3;
 	transition: opacity 300ms ease-in-out;
 }
 
