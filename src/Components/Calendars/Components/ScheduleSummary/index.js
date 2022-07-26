@@ -8,8 +8,6 @@ export default function ScheduleSummary() {
 		schedules,
 		current
 	} = useContext(CCContext)
-	console.log(schedules)
-	console.log(current)
 
 	const isThere3Professors = () => {
 		const schedule = schedules[current - 1]
