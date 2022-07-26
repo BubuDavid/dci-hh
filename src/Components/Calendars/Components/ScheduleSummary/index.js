@@ -8,8 +8,21 @@ export default function ScheduleSummary() {
 		schedules,
 		current
 	} = useContext(CCContext)
+	console.log(schedules)
+	console.log(current)
 
-let columnNmames = ['name', 'group', 'day1', 'day2', 'day3', 'professor1', 'professor2']
+	const isThere3Professors = () => {
+		const schedule = schedules[current - 1]
+		for (const subject of schedule) {
+			if (subject.professor3) {
+				return true
+			}
+		}
+	}
+	let columnNmames = ['name', 'group', 'day1', 'day2', 'day3', 'professor1', 'professor2']
+	if (isThere3Professors()) {
+		columnNmames.push('professor3')
+	}
 	return (
 		<table
 			className='ScheduleSummary'
@@ -17,7 +30,7 @@ let columnNmames = ['name', 'group', 'day1', 'day2', 'day3', 'professor1', 'prof
 		>
 			<thead>
 				<tr>
-					<th colSpan={7} className='TableTitle'>Resumen del Horario</th>
+					<th colSpan={isThere3Professors() ? 8 : 7} className='TableTitle'>Resumen del Horario</th>
 				</tr>
 			</thead>
 			<thead>
@@ -29,6 +42,7 @@ let columnNmames = ['name', 'group', 'day1', 'day2', 'day3', 'professor1', 'prof
 					<th>Día / Hora / Aula 3</th>
 					<th>Profesor 1</th>
 					<th>Profesor 2</th>
+					{isThere3Professors() && <th>Profesor 3</th>}
 				</tr>
 			</thead>
 			<tbody>

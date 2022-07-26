@@ -85,6 +85,11 @@ export default function Calendar() {
 									<span className='eventProfessor'>{e.professor2}</span><br />
 								</>
 							)}
+							{e.professor3 && (
+								<>
+									<span className='eventProfessor'>{e.professor3}</span><br />
+								</>
+							)}
 							<span className='eventGroup'>Group: { e.group }</span><br />
 							<span className='eventTime'>{ e.time }</span> <span className='eventRoom'>{ e.room }</span>
 						</div>

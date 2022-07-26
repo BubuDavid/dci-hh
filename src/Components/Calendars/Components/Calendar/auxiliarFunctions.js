@@ -147,6 +147,7 @@ function getEventsForCalendar(schedule, timeSlots, nColumns) {
 			tempSubject.group = subject.group
 			tempSubject.professor1 = getProfessor(subject.professor1)
 			tempSubject.professor2 = getProfessor(subject.professor2)
+			if (subject.professor3) tempSubject.professor3 = getProfessor(subject.professor3)
 			const [
 				newTime,
 				newRoom
