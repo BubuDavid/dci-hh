@@ -41,5 +41,16 @@
   "devDependencies": {
     "dotenv": "^16.0.1",
     "gh-pages": "^4.0.0"
+  },
+  "description": "Este es un pequeño manual de usuario para utilizar el Hacedor de Horarios DCI 🐝. También hay algunas ntoas que debes de tomar en cuenta.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BubuDavid/dci-hh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BubuDavid/dci-hh/issues"
   }
 }
