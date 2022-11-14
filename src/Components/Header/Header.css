@@ -1,0 +1,50 @@
+.Header {
+  color: #FFF;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 10px;
+
+	cursor: pointer;
+}
+
+.NeonText {
+	filter: drop-shadow(rgba(255, 215, 77, 0.6) -1px -1px 2px) drop-shadow(rgba(124, 127, 255, 0.6) 1px 1px 2px);
+}
+
+.NeonBorder {
+  padding: 0.7rem 5rem;
+	border-bottom: 0.2rem solid #fff;
+	
+	transition: border 350ms ease-in-out;
+
+	max-width: 90%;
+}
+
+
+@media only screen and (max-width: 1250px) {
+	.Header {
+		font-size: 2.5rem;
+		letter-spacing: 1px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.Header {
+		font-size: 1.7rem;
+	}
+}
+
+
+@media only screen and (max-width: 700px) {
+	.Header {
+		font-size: 1.4rem;
+		padding: 0 0.3rem;
+	}
+}
+
+
+@media only screen and (max-width: 400px) {
+	.Header {
+		font-size: 1rem;
+	}
+}
