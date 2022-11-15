@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import SearchButton from './SearchButton/SearchButton'
+import SearchBar from './SearchBar/SearchBar'
 import SubjectItem from './SubjectItem/SubjectItem'
 import './SubjectList.css'
 
@@ -11,7 +11,7 @@ function SubjectList() {
 		<section className='SubjectListSection'>
 			<ul className='SubjectList'>
 
-				<SearchButton
+				<SearchBar
 					subjects={subjectNames}
 					setDisplaySubjects = {setDisplaySubjects}
 				/>

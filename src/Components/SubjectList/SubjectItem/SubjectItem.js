@@ -3,7 +3,11 @@ import './SubjectItem.css'
 
 function SubjectItem({subject}) {
 	return (
-		<li className='SubjectListItem'>{subject}</li>
+		<li
+			className='SubjectListItem neonText'
+		>
+			{subject}
+		</li>
 	)
 }
 

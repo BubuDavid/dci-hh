@@ -1,7 +1,7 @@
 import React from 'react'
-import './SearchButton.css'
+import './SearchBar.css'
 
-function SearchButton({ subjects, setDisplaySubjects }) {
+function SearchBar({ subjects, setDisplaySubjects }) {
 
 	function filterSubjects(subjects, subjectName) {
 		let normalizedSubjectName = subjectName
@@ -17,12 +17,20 @@ function SearchButton({ subjects, setDisplaySubjects }) {
 	}
 	
 	return (
-		<input
-			className='SearchButton'
-			type={'text'}
-			onChange={(e) => filterSubjects(subjects, e.target.value)}
-		/>
+		<>
+			<div className='SearchBarPlaceHolder'>
+				<input
+					className='SearchBar'
+					type={'text'}
+					onChange={(e) => filterSubjects(subjects, e.target.value)}
+					placeholder="🔍 Buscar Materias"
+				/>
+
+			</div>
+
+		</>
+
 	)
 }
 
-export default SearchButton
+export default SearchBar

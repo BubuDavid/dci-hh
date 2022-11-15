@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
+* {
+	box-sizing: border-box;
+}
+
 body {
   margin: 0;
 	padding: 0;
@@ -21,4 +25,39 @@ html {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #170F1E 100%);
   overflow: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+	height: 5px;
+	border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #170F1E;
+	filter: drop-shadow(rgba(255, 215, 77, 0.6) -1px -1px 2px) drop-shadow(rgba(124, 127, 255, 0.6) 1px 1px 2px);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+	border-radius: 5px;
+}
+
+
+
+/* Common Classes Styles */
+.neonText {
+	filter: drop-shadow(rgba(255, 215, 77, 0.6) -1px -1px 2px) drop-shadow(rgba(124, 127, 255, 0.6) 1px 1px 2px);
+}
+
+.neonBorder {
+  padding: 0.7rem 5rem;
+	border-bottom: 0.2rem solid #fff;
+	
+	transition: border 350ms ease-in-out;
+
+	max-width: 90%;
 }
