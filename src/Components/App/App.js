@@ -1,16 +1,22 @@
 import React from 'react'
-import Header from '../Header/Header'
+import Main from '../../Views/Main'
 import Stars from '../Stars/Stars'
 import './App.css'
 
 function App() {
+	let view = 'main'
+
 	return (
 		<>
+			{/* Star Background */}
 			<Stars />
-			<div id='app'>
-				<Header />
 
-			</div>
+			{/* Views */}
+			{/* Route: / */}
+			{view === 'main' && (
+				<Main />
+			)}
+
 		</>
 	)
 }
