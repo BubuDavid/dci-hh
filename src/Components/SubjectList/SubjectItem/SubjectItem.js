@@ -3,11 +3,13 @@ import './SubjectItem.css'
 
 function SubjectItem({subject}) {
 	return (
-		<li
-			className='SubjectListItem neonText'
-		>
-			{subject}
-		</li>
+		<div className='SubjectListItemBox'>
+			<li
+				className='SubjectListItem neonText'
+			>
+				<span className='SubjectItemText'>{subject}</span>
+			</li>
+		</div>
 	)
 }
 
