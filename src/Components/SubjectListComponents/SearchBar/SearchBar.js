@@ -7,8 +7,7 @@ function SearchBar({ subjects, setDisplaySubjects }) {
 		let normalizedSubjectName = subjectName
 			.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 			.toUpperCase()
-		
-		let newSubjects = subjects.filter((subject) => (
+		let newSubjects = subjects?.filter((subject) => (
 			subject.includes(normalizedSubjectName)
 		))
 

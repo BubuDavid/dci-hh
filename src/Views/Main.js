@@ -1,7 +1,7 @@
 import React from 'react'
 import './Main.css'
 import Header from '../Components/Header/Header'
-import SubjectList from '../Components/SubjectList/SubjectList'
+import SubjectList from '../Components/SubjectListComponents/SubjectList/SubjectList'
 
 
 // Main view for the route: /
