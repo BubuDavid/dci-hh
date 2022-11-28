@@ -1,0 +1,13 @@
+.Main {
+	display: flex;
+	align-items: center;
+
+	flex-direction: column;
+}
+
+.SubmitSection {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}

@@ -12,8 +12,13 @@
 
 .SubjectListItemBox.selected {
 	border: 4px solid #68B984;
+	filter: drop-shadow(rgba(124, 255, 77, 0.6) -1px -1px 2px) drop-shadow(rgba(124, 127, 255, 0.6) 0.3px 0.3px 0.3px);
 	color: #68B984;
 	font-weight: bold;
+}
+
+.SubjectListItemBox.selected .SubjectListItem {
+	filter: none;
 }
 
 .SubjectListItem {

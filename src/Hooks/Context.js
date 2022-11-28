@@ -4,6 +4,8 @@ import useFetchAPI from "./useFetchAPI"
 const HHContext = createContext()
 
 function HHProvider(props) {
+	const [view, setView] = useState('main')
+
 	const {
 		data: subjectNames,
 		loading: subjectNamesLoading,
@@ -29,14 +31,21 @@ function HHProvider(props) {
 		return true
 	}
 
+	const goBack = () => {
+		setView('main')
+		setSearchWord('')
+	}
+
 	return (
 		<HHContext.Provider value={{
+			view, setView,
 			subjectNames,
 			subjectNamesLoading,
 			subjectNamesError,
 			selectedSubjects, setSelectedSubjects,
 			searchWord, setSearchWord,
-			toggleSelectionSubject
+			toggleSelectionSubject,
+			goBack
 		}}>
 		{ props.children }
 	</HHContext.Provider>

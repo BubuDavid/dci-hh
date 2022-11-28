@@ -1,0 +1,25 @@
+.MakeSchedulesButton {
+	margin-left: 1rem;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+	background-color: transparent;
+	filter: drop-shadow(rgba(255, 215, 77, 0.6) -1px -1px 2px) drop-shadow(rgba(124, 127, 255, 0.6) 1px 1px 2px);
+	border-radius: 5px;
+	border: 5px solid #fff;
+	color: #fff;
+
+	opacity: 0.3;
+	transition: all 350ms ease-in-out;
+	pointer-events: none;
+}
+
+.MakeSchedulesButton.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.MakeSchedulesButton:hover {
+	transform: scale(1.03);
+	border-radius: 5px;
+	font-weight: bold;
+}
