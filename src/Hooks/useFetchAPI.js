@@ -23,7 +23,7 @@ function useFetchAPI(requestParams) {
 				setLoading(false)
 			}
 		}
-			getData(url, requestParams)
+		getData(url, requestParams)
 	}, [])
 
 

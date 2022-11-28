@@ -5,7 +5,6 @@ import './App.css'
 
 function App() {
 	let view = 'main'
-
 	return (
 		<>
 			{/* Star Background */}

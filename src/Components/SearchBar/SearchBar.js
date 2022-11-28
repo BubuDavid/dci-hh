@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import HHContext from '../../Hooks/Context'
 import './SearchBar.css'
 
-function SearchBar({ subjects, setDisplaySubjects }) {
+function SearchBar() {
+	const {
+		subjectNames: subjects,
+		setSearchWord
+	} = useContext(HHContext)
 
 	function filterSubjects(subjects, subjectName) {
 		let normalizedSubjectName = subjectName
 			.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 			.toUpperCase()
-		let newSubjects = subjects?.filter((subject) => (
-			subject.includes(normalizedSubjectName)
-		))
-
-
-		setDisplaySubjects(newSubjects)
+		
+		setSearchWord(normalizedSubjectName)
 	}
 	
 	return (
