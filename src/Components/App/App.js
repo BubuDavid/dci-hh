@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import HHContext from '../../Hooks/Context'
 import Main from '../../Views/Main/Main'
-import Schedules from '../../Views/Schedules/Schedules'
+import Preview from '../../Views/Preview/Preview'
+import SchedulesView from '../../Views/SchedulesView/SchedulesView'
 import Stars from '../Stars/Stars'
 import './App.css'
 
@@ -17,8 +18,11 @@ function App() {
 			{view === 'main' && (
 				<Main />
 			)}
-			{view === 'schedules' && (
-				<Schedules />
+			{view === 'preview' && (
+				<Preview />
+			)}
+			{view === 'schedulesView' && (
+				<SchedulesView />
 			)}
 
 		</>

@@ -1,5 +1,5 @@
-.MakeSchedulesButton {
-	margin-left: 1rem;
+.ChangeViewButton {
+	margin-left: 1.2rem;
 	padding: 0.5rem 1rem;
 	cursor: pointer;
 	background-color: transparent;
@@ -8,18 +8,21 @@
 	border: 5px solid #fff;
 	color: #fff;
 
+	font-size: 1.2rem;
+
 	opacity: 0.3;
 	transition: all 350ms ease-in-out;
 	pointer-events: none;
 }
 
-.MakeSchedulesButton.active {
-	opacity: 1;
+.ChangeViewButton.active {
+	opacity: 0.9;
 	pointer-events: all;
 }
 
-.MakeSchedulesButton:hover {
+.ChangeViewButton:hover {
 	transform: scale(1.03);
 	border-radius: 5px;
 	font-weight: bold;
+	opacity: 1;
 }
