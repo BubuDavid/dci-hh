@@ -1,0 +1,40 @@
+.ScheduleSummary {
+	color: white;
+	width: 100%;
+	border: 1px solid white;
+}
+
+.ScheduleSummary th {
+	padding: 1rem;
+	border: 1px solid white;
+	gap: 2rem;
+	text-align: center;
+}
+
+.ScheduleSummary td {
+	border: 1px solid white;
+	padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+	.ScheduleSummary {
+		font-size: 0.8rem;
+	}
+
+	.ScheduleSummary td {
+		padding: 5px;
+	}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+	.ScheduleSummary {
+		font-size: 0.6rem;
+	}
+
+	.ScheduleSummary td {
+		padding: 0;
+	}
+
+}

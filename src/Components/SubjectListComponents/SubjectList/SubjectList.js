@@ -13,8 +13,6 @@ function SubjectList({onlySelected}) {
 		selectedSubjects
 	} = useContext(HHContext)
 
-	console.log('rendering')
-	
 	return (
 		<section className='SubjectListSection'>
 			<ul className='SubjectList'>

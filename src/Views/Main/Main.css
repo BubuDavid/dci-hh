@@ -9,5 +9,16 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 0.5rem;
+	margin: 0.8rem 0;
+}
+
+.Main .Header {
+	font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+	.Main .Header {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+	}
 }

@@ -3,6 +3,7 @@ import Header from '../../Components/Header/Header'
 import HHContext from '../../Hooks/Context'
 import useFetchAPI from '../../Hooks/useFetchAPI'
 import ScheduleSection from '../../Components/ScheduleSectionComponents/ScheduleSection/ScheduleSection'
+import SubjectCard from '../../Components/SubjectCard/SubjectCard'
 import './SchedulesView.css'
 
 function SchedulesView() {
@@ -22,29 +23,39 @@ function SchedulesView() {
     },
 		body: JSON.stringify(body)
 	})
-
-	console.log(schedules)
-
+	
 	return (
 		<div className='SchedulesView'>
 			<Header />
 			{loading ?
-				<h3>🚀 Estamos cargando, awanta... 🐱‍🚀</h3>
+				<h3 className='message'>🚀 Estamos cargando, awanta... 🐱‍🚀</h3>
 			: null}
 			
 			{error ? (
-				<div className='errorMessage'>
+				<div className='message'>
 					<h3>{`😱 Hay un error en el servidor👇`}</h3>
 					<h2><b>{`Status -> ${error}`}</b></h2>
 				</div>
 			) : null}
+
+			{!loading && !schedules.there_are_combs ? 
+			<div className='SplicedCards message'>
+				<h3>{`😱 No existe ningún horario, estas dos materias se empalman 👇`}</h3>
+					<SubjectCard
+						subject={schedules?.result[0].NAME}
+					/>
+					<SubjectCard
+						subject={schedules?.result[1].NAME}
+					/>
+			</div>
+			: null}
 			
-			{!loading && schedules ?
+			{!loading && schedules.there_are_combs ?
 				<ScheduleSection
 					schedules={schedules}
 				/>
-			:null}
-
+				: null}
+			
 		</div>
 	)
 }

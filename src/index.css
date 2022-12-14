@@ -25,7 +25,7 @@ body {
 
 
 html {
-  height: 100%;
+  min-height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #170F1E 100%);
   overflow: hidden;
 }
@@ -54,4 +54,8 @@ html {
 /* Common Classes Styles */
 .neonText {
 	filter: drop-shadow(rgba(255, 215, 77, 0.6) -1px -1px 2px) drop-shadow(rgba(124, 127, 255, 0.6) 1px 1px 2px);
+}
+
+.message {
+	color: white;
 }

@@ -26,3 +26,13 @@
 	font-weight: bold;
 	opacity: 1;
 }
+
+
+@media only screen and (max-width: 500px) {
+	.ChangeViewButton {
+		padding: 0.5rem 0.5rem;
+		font-size: 1rem;
+		margin-left: 1.5rem;
+
+	}
+}

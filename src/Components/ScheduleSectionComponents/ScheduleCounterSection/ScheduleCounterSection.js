@@ -18,7 +18,7 @@ function ScheduleCounterSection({ currentScheduleIndex, setCurrentScheduleIndex,
 						opacity: currentScheduleIndex + 1 == 1 ? '0.5' : '1',
 						pointerEvents: currentScheduleIndex + 1 == 1 ? 'none' : 'all'
 					}}
-				>👈 Horario anterior</div>
+				>👈 Anterior </div>
 				<div className='ScheduleSectionCounter'>
 						<span className='ScheduleNumber'>{currentScheduleIndex + 1}</span>
 						<div className='background'></div>
@@ -32,7 +32,7 @@ function ScheduleCounterSection({ currentScheduleIndex, setCurrentScheduleIndex,
 						opacity: currentScheduleIndex + 1 == totalScheduleNumber ? '0.5' : '1',
 						pointerEvents: currentScheduleIndex + 1 == totalScheduleNumber ? 'none' : 'all'
 					}}
-				>Siguiente Horario 👉</div>
+				>Siguiente  👉</div>
 
 
 			</div>

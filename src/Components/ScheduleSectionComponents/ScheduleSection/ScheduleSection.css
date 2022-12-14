@@ -14,12 +14,13 @@
   display: inline-block;
   position: relative;
   padding: 1rem 3rem;
-  transform: translate(-2px, -0.5rem);
+  transform: translate(4px, -0.5rem);
   text-transform: uppercase;
   perspective: 10rem;
 }
 .ScheduleCounterSection > .ScheduleSectionText:first-of-type {
   padding-left: 4rem;
+  transform: translate(-11px, -0.5rem);
 }
 .ScheduleCounterSection > .ScheduleSectionText:first-of-type::before {
   content: '';

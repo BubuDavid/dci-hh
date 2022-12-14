@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import SubjectIcon from './SubjectIcon/SubjectIcon'
 import './SubjectCounter.css'
 import HHContext from '../../../Hooks/Context'
@@ -14,6 +14,7 @@ function SubjectCounter() {
 				<SubjectIcon
 					key={key}
 					subject={subject}
+					pos={key}
 				/>
 			))}
 		</div>

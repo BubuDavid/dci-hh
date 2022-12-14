@@ -1,11 +1,13 @@
 import React from 'react'
 import './SubjectIcon.css'
 
-function SubjectIcon({ subject }) {
-
+function SubjectIcon({ subject, pos }) {
 	let className = 'SubjectIcon' + (subject ? ' active' : '')
 	return (
-		<i className={className}>
+		<i
+			className={className}
+			id={pos === 4 ? 'middle' : ''}
+		>
 			🚀
 		</i>
 	)
