@@ -2,16 +2,16 @@ import React, { useContext } from 'react'
 import HHContext from '../../Hooks/Context'
 import './ChangeViewButton.css'
 
-function ChangeViewButton({view, text, active}) {
+function ChangeViewButton({view, text, active, size}) {
 	const {
 		selectedSubjects,
-		setView
+		setViewChangeSize
 	} = useContext(HHContext)
 
 	return (
 		<button
 			className={'ChangeViewButton' + (selectedSubjects.length || active > 0 ? ' active' : '')}
-			onClick={(e) => { setView(view)}}
+			onClick={(e) => { setViewChangeSize(view, size)}}
 		>
 			{text}
 		</button>

@@ -10,7 +10,7 @@ import MakeSchedulesButton from '../../Components/ChangeViewButton/ChangeViewBut
 // Main view for the route: /
 function Main() {
 	return (
-		<div className='Main'>
+		<div className='Main View'>
 			<Header />
 			<SearchBar />
 			<div className='SubmitSection'>

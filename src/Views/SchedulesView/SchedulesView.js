@@ -8,6 +8,8 @@ import './SchedulesView.css'
 
 function SchedulesView() {
 	const { selectedSubjects } = useContext(HHContext)
+
+	
 	const body = {
 		"subjects": selectedSubjects
 	}
@@ -25,7 +27,7 @@ function SchedulesView() {
 	})
 	
 	return (
-		<div className='SchedulesView'>
+		<div className='SchedulesView View'>
 			<Header />
 			{loading ?
 				<h3 className='message'>🚀 Estamos cargando, awanta... 🐱‍🚀</h3>

@@ -6,6 +6,8 @@
 	-webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+
+	z-index: 10;
 }
 
 body {
@@ -16,6 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
 }
 
 ::selection {
@@ -24,11 +27,11 @@ body {
 }
 
 
-html {
+/* html {
   min-height: 100%;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #170F1E 100%);
   overflow: hidden;
-}
+} */
 
 /* width */
 ::-webkit-scrollbar {

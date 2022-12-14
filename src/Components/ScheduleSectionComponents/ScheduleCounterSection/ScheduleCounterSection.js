@@ -15,8 +15,8 @@ function ScheduleCounterSection({ currentScheduleIndex, setCurrentScheduleIndex,
 					onClick={(e) => changeSchedule(currentScheduleIndex - 1)}
 					id="prevBtn"
 					style={{
-						opacity: currentScheduleIndex + 1 == 1 ? '0.5' : '1',
-						pointerEvents: currentScheduleIndex + 1 == 1 ? 'none' : 'all'
+						opacity: currentScheduleIndex + 1 === 1 ? '0.5' : '1',
+						pointerEvents: currentScheduleIndex + 1 === 1 ? 'none' : 'all'
 					}}
 				>👈 Anterior </div>
 				<div className='ScheduleSectionCounter'>
@@ -29,8 +29,8 @@ function ScheduleCounterSection({ currentScheduleIndex, setCurrentScheduleIndex,
 					onClick={(e) => changeSchedule(currentScheduleIndex + 1)}
 					id="nextBtn"
 					style={{
-						opacity: currentScheduleIndex + 1 == totalScheduleNumber ? '0.5' : '1',
-						pointerEvents: currentScheduleIndex + 1 == totalScheduleNumber ? 'none' : 'all'
+						opacity: currentScheduleIndex + 1 === totalScheduleNumber ? '0.5' : '1',
+						pointerEvents: currentScheduleIndex + 1 === totalScheduleNumber ? 'none' : 'all'
 					}}
 				>Siguiente  👉</div>
 

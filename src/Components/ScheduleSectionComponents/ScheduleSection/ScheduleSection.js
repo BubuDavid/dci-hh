@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ScheduleCounterSection from '../ScheduleCounterSection/ScheduleCounterSection'
 import ScheduleSummary from '../ScheduleSummary/ScheduleSummary'
+import ScheduleCalendar from '../ScheduleCalendar/ScheduleCalendar'
 import './ScheduleSection.css'
 
 function ScheduleSection({ schedules }) {
@@ -15,6 +16,10 @@ function ScheduleSection({ schedules }) {
 			/>
 
 			<ScheduleSummary
+				schedule={schedules.result[currentScheduleIndex]}
+			/>
+
+			<ScheduleCalendar
 				schedule={schedules.result[currentScheduleIndex]}
 			/>
 			

@@ -5,6 +5,7 @@ const HHContext = createContext()
 
 function HHProvider(props) {
 	const [view, setView] = useState('main')
+	const [bgSize, setBgSize] = useState('100')
 
 	const {
 		data: subjectNames,
@@ -14,6 +15,12 @@ function HHProvider(props) {
 	
 	const [selectedSubjects, setSelectedSubjects] = useState([])
 	const [searchWord, setSearchWord] = useState("")
+
+	const setViewChangeSize = (newView, newSize='100') => {
+		setView(newView)
+		if (!newSize) setBgSize('100')
+		else setBgSize(newSize)
+	}
 
 	const toggleSelectionSubject = (clickedSubject) => {
 		let newSelectedSubjects = [...selectedSubjects]
@@ -34,18 +41,20 @@ function HHProvider(props) {
 	const goBack = () => {
 		setView('main')
 		setSearchWord('')
+		setBgSize('100')
 	}
 
 	return (
 		<HHContext.Provider value={{
-			view, setView,
+			view, setViewChangeSize,
+			bgSize, setBgSize,
 			subjectNames,
 			subjectNamesLoading,
 			subjectNamesError,
 			selectedSubjects, setSelectedSubjects,
 			searchWord, setSearchWord,
 			toggleSelectionSubject,
-			goBack
+			goBack,
 		}}>
 		{ props.children }
 	</HHContext.Provider>

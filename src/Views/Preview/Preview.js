@@ -7,7 +7,7 @@ import './Preview.css'
 function Preview() {
 	return (
 		<div
-			className='Preview'
+			className='Preview View'
 		>
 			<Header />
 			<div className='PreviewButtonSection'>
@@ -18,8 +18,9 @@ function Preview() {
 				/>
 				<ChangeViewButton
 					view={'schedulesView'}
+					size={'200'}
 					text={'👽 ¡Crear!'}
-					active={true}
+					// active={true}
 				/>
 
 			</div>
