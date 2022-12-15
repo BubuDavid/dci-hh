@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Hacedor de Horarios",
+  "name": "Hacedor de Horarios para la DCI 🐝",
   "icons": [
     {
       "src": "favicon.ico",

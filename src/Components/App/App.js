@@ -3,6 +3,7 @@ import HHContext from '../../Hooks/Context'
 import Main from '../../Views/Main/Main'
 import Preview from '../../Views/Preview/Preview'
 import SchedulesView from '../../Views/SchedulesView/SchedulesView'
+import Footer from '../Footer/Footer'
 import Stars from '../Stars/Stars'
 import './App.css'
 
@@ -16,10 +17,16 @@ function App() {
 			{/* Views */}
 			{/* Route: / */}
 			{view === 'main' && (
-				<Main />
+				<>
+					<Main />
+					<Footer />
+				</>
 			)}
 			{view === 'preview' && (
-				<Preview />
+				<>
+					<Preview />
+					<Footer />
+				</>
 			)}
 			{view === 'schedulesView' && (
 				<SchedulesView />

@@ -1,0 +1,22 @@
+.Footer {
+	position: absolute;
+	bottom: 1rem;
+	left: 3rem;
+	color: white;
+	z-index: 100;
+}
+.Footer span {
+	opacity: 0.5;
+}
+
+.Footer a {
+	color: white;
+	text-decoration: none;
+	opacity: 0.5;
+	transition: all 100ms ease;
+}
+
+
+.Footer a:hover {
+	opacity: 1;
+}
