@@ -106,19 +106,40 @@
   font-size: 1rem;
   transform: translateY(-0.8rem) translateX(-0.2rem);
 }
-@media screen and (max-width: 600px) {
-  .ScheduleCounterSection > .ScheduleSectionText {
-    display: block;
-  }
-  .ScheduleCounterSection > .ScheduleSectionText:first-of-type {
-    margin-bottom: 3rem;
-  }
-  .ScheduleCounterSection > .ScheduleSectionText:last-of-type {
-    margin-top: 4rem;
-  }
-}
-
 
 .ScheduleSectionText {
 	cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+	.ScheduleCounterSection > .ScheduleSectionText:first-of-type {
+		padding: 1rem;
+		margin: 0;
+		margin-right: 0.5rem;
+		transform: translate(0, -0.5rem);
+	}
+	.ScheduleCounterSection > .ScheduleSectionText:last-of-type {
+		padding: 1rem;
+		margin: 0;
+		transform: translate(0, -0.5rem);
+		margin-left: 0.5rem;
+	}
+  .ScheduleCounterSection > .ScheduleSectionText {
+    background-color: white;
+		border-radius: 5px;
+
+  }
+
+	.ScheduleCounterSection > .ScheduleSectionText:last-of-type::after {
+		display: none;
+		transform: rotateY(-10deg) translateX(-20%);
+	}
+
+	.ScheduleCounterSection > .ScheduleSectionText:first-of-type::before {
+		display: none;
+		transform: rotateY(10deg) translateX(20%);
+
+	}
+
 }

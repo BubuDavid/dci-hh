@@ -33,7 +33,8 @@
 		font-size: 0.6rem;
 	}
 
-	.ScheduleSummary td {
+	.ScheduleSummary td,
+	.ScheduleSummary th {
 		padding: 0;
 	}
 

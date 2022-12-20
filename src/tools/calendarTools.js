@@ -91,7 +91,7 @@ function getHeight(time) {
 }
 
 function getWidth(column, nColumns) {
-	return 100 / (nColumns - (column - 1)) * 0.85
+	return 100 / (nColumns - (column - 1)) * 1 // The *1 is the Scala factor you can change it
 }
 
 function getName(name) {
