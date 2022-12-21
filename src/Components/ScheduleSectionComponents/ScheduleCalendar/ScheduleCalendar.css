@@ -73,18 +73,10 @@
   content: '';
   position: absolute;
   left: 100%;
-  /* width: calc(80vw - 100%); */
-	width: 2420%;
   height: 1px;
+	width: calc(80vw - 50px);
   background: lightblue;
   /* z-index: 1; */
-}
-
-@media only screen and (max-width: 1100px) {
-	.timeSlots li::after {
-		width: calc(100vw - 70px);
-	}
-
 }
 
 .eventContainer {
@@ -128,6 +120,12 @@
 
 .eventRoom {
 	font-weight: normal;
+}
+
+@media only screen and (max-width: 800px) {
+	.timeSlots li::after {
+		width: calc(100vw - 51px);
+	}
 }
 
 @media only screen and (max-width: 700px) {

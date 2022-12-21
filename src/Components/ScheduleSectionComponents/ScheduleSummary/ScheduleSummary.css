@@ -1,6 +1,6 @@
 .ScheduleSummary {
 	color: white;
-	width: 100%;
+	width: 80vw;
 	border: 1px solid white;
 }
 
@@ -14,11 +14,13 @@
 .ScheduleSummary td {
 	border: 1px solid white;
 	padding: 10px;
+	word-break: break-all;
 }
 
 @media only screen and (max-width: 800px) {
 	.ScheduleSummary {
 		font-size: 0.8rem;
+		width: 100%;
 	}
 
 	.ScheduleSummary td {
