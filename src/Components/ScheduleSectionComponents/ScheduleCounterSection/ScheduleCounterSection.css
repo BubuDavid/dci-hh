@@ -105,22 +105,28 @@
 
 
 @media screen and (max-width: 600px) {
+	.ScheduleCounterSection {
+		margin: 1rem 0;
+	}
+
+	.ScheduleSectionCounter {
+		transform: scale(0.7);
+	}
 	.ScheduleCounterSection > .ScheduleSectionText:first-of-type {
-		padding: 1rem;
+		padding: 0.5rem;
 		margin: 0;
-		margin-right: 0.5rem;
-		transform: translate(0, -0.5rem);
+		/* margin-right: 0.5rem; */
+		transform: translate(1rem, -0.5rem);
 	}
 	.ScheduleCounterSection > .ScheduleSectionText:last-of-type {
-		padding: 1rem;
+		padding: 0.5rem;
 		margin: 0;
-		transform: translate(0, -0.5rem);
-		margin-left: 0.5rem;
+		transform: translate(-1rem, -0.5rem);
+		/* margin-left: 0.5rem; */
 	}
   .ScheduleCounterSection > .ScheduleSectionText {
     background-color: white;
 		border-radius: 5px;
-
   }
 
 	.ScheduleCounterSection > .ScheduleSectionText:last-of-type::after {
@@ -137,28 +143,20 @@
 }
 
 @media screen and (max-width: 408px) {
-	.ScheduleCounterSection > .ScheduleSectionCounter > .ScheduleNumber:first-of-type {
-    font-size: 1rem;
+	.ScheduleCounterSection > .ScheduleSectionText {
+		font-size: 0.7rem;
 	}
-
-	.ScheduleCounterSection > .ScheduleSectionCounter > .ScheduleNumber:first-of-type::after {
-		font-size: 1rem;
-
-	}
-
-	.ScheduleCounterSection > .ScheduleSectionCounter > .ScheduleNumber:last-of-type {
-    font-size: 1rem;
-    transform: translateY(0) translateX(-0.2rem);
+	.ScheduleSectionCounter {
+		transform: scale(0.5);
 	}
 
 	.ScheduleCounterSection > .ScheduleSectionText:first-of-type {
-    padding: 0.5rem;
-		font-size: 0.7rem;
+		padding: 0.3rem;
+		transform: translate(2rem, -0.5rem);
 	}
-
 	.ScheduleCounterSection > .ScheduleSectionText:last-of-type {
-    padding: 0.5rem;
-		font-size: 0.7rem;
+		padding: 0.3rem;
+		transform: translate(-2rem, -0.5rem);
 	}
 }
 
