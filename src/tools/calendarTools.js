@@ -61,17 +61,18 @@ function getRow(time, timeSlots) {
 	if (!time) return time
 
 	let start = time.split('-')[0]
+	start = Number(start)
 
 	for (let i = 0; i < timeSlots.length; i++) {
 		const timeSlotHour = Number(timeSlots[i].split(':')[0])
 		if (timeSlotHour >= start) {
-			if (timeSlotHour === start) return i * 60 !== 0 ? i * 60 : 1
+			if (timeSlotHour === start) return (i * 60) !== 0 ? i * 60 : 1
 			else {
 				let startRow = i * 60
 				let fractionRow = start - Math.floor(start)
 				startRow += fractionRow * 100
 
-				return startRow
+				return startRow !== 0 ? startRow : 1
 			}
 		}
 	}

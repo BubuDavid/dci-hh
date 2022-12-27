@@ -12,14 +12,14 @@ function Stars() {
 				id="stars"
 				style={{
 					background: `#000 url(${starsImage}) repeat top center`,
-					height: `${bgSize}%`
+					height: `${bgSize}`
 				}}
 			></div>
 			<div className="twinkling"
 				id="twinkling"
 				style={{
 					background: `transparent url(${twinklingImage}) repeat top center`,
-					height: `${bgSize}%`
+					height: `${bgSize}`
 				}}
 			></div> 
 		</>

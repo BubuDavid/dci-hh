@@ -2,11 +2,17 @@ import React, { useContext } from 'react'
 import HHContext from '../../Hooks/Context'
 import './ChangeViewButton.css'
 
-function ChangeViewButton({view, text, active, size}) {
+function ChangeViewButton({view, text, active, size, isScheduleView}) {
 	const {
 		selectedSubjects,
 		setViewChangeSize
 	} = useContext(HHContext)
+
+	if (isScheduleView) {
+		let nSize = 1200
+		nSize += selectedSubjects.length * 60
+		size = `${nSize}px`
+	}
 
 	return (
 		<button

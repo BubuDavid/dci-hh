@@ -3,7 +3,7 @@ import { getTableParams, getEventsForCalendar } from '../../../tools/calendarToo
 import './ScheduleCalendar.css'
 
 function ScheduleCalendar({ schedule }) {
-	
+		
 	const {
 		weekDays,
 		timeSlots
@@ -15,7 +15,7 @@ function ScheduleCalendar({ schedule }) {
 		events.length > 0 ? (
 			<div className='ScheduleCalendar'>
 
-				<div className='header'>
+				<div className='CalendarHeader'>
 					{/* List of week days */}
 					<ul
 						className='weekDays'
@@ -62,28 +62,6 @@ function ScheduleCalendar({ schedule }) {
 						>
 							<div className='eventInfo'>
 								<span className='eventName'>{e.NAME}</span><br />
-								{e.PROFESSOR1 && (
-									<>
-										<span className='eventProfessor'>{e.PROFESSOR1}</span><br />
-									</>
-								)}
-								{e.PROFESSOR2 && (
-									<>
-										<span className='eventProfessor'>{e.PROFESSOR2}</span><br />
-									</>
-								)}
-								{e.PROFESSOR3 && (
-									<>
-										<span className='eventProfessor'>{e.PROFESSOR3}</span><br />
-									</>
-								)}
-								{e.PROFESSOR4 && (
-									<>
-										<span className='eventProfessor'>{e.PROFESSOR4}</span><br />
-									</>
-								)}
-								<span className='eventGroup'>Group: { e.GROUP }</span><br />
-								<span className='eventTime'>{ e.TIME }</span> <span className='eventRoom'>{ e.ROOM }</span>
 							</div>
 						</div>
 					})}

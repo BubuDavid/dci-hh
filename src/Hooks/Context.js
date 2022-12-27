@@ -16,9 +16,9 @@ function HHProvider(props) {
 	const [selectedSubjects, setSelectedSubjects] = useState([])
 	const [searchWord, setSearchWord] = useState("")
 
-	const setViewChangeSize = (newView, newSize='100') => {
+	const setViewChangeSize = (newView, newSize='100%') => {
 		setView(newView)
-		if (!newSize) setBgSize('100')
+		if (!newSize) setBgSize('100%')
 		else setBgSize(newSize)
 	}
 
@@ -41,7 +41,7 @@ function HHProvider(props) {
 	const goBack = () => {
 		setView('main')
 		setSearchWord('')
-		setBgSize('100')
+		setBgSize('100%')
 	}
 
 	return (
