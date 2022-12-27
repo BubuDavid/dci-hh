@@ -9,7 +9,11 @@ function ScheduleCalendar({ schedule }) {
 		timeSlots
 	} = getTableParams(schedule)
 
-	const events = getEventsForCalendar(schedule, timeSlots, weekDays.length)
+	let lessThan660 = false
+	if (window.innerWidth < 660) {
+		lessThan660 = true
+	}
+	const events = getEventsForCalendar(schedule, timeSlots, weekDays.length, lessThan660)
 
 	return (
 		events.length > 0 ? (

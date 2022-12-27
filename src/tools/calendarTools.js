@@ -91,9 +91,9 @@ function getWidth(column, nColumns) {
 	return 100 / (nColumns - (column - 1)) * 1 // The *1 is the Scala factor you can change it
 }
 
-function getName(name) {
+function getName(name, widthCheck) {
 	let words = name.split(" ")
-	if (words.length >= 3) {
+	if (words.length >= 3 || widthCheck) {
 		let newName = ''
 		for (const word of words) {
 			newName += word[0].toUpperCase() + '.'
@@ -142,7 +142,7 @@ function getColor(colors) {
 	return color
 }
 
-function getEventsForCalendar(schedule, timeSlots, nColumns) {
+function getEventsForCalendar(schedule, timeSlots, nColumns, widthCheck) {
 	const events = []
 	let colors = [
 		'#2B3467',
@@ -170,7 +170,7 @@ function getEventsForCalendar(schedule, timeSlots, nColumns) {
 			if (!subject[`TIME${dayIndex}`] || !subject[`DAY${dayIndex}`]) break
 
 			let tempSubject = {}
-			tempSubject.NAME = getName(subject.NAME)
+			tempSubject.NAME = getName(subject.NAME, widthCheck)
 			tempSubject.GROUP = subject.GROUP
 			getProfessors(tempSubject, subject)
 			const [

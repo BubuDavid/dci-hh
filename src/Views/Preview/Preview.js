@@ -18,7 +18,7 @@ function Preview() {
 				/>
 				<ChangeViewButton
 					view={'schedulesView'}
-					size={'830px'}
+					size={'100px'}
 					text={'👽 ¡Crear!'}
 					isScheduleView={true}
 					// active={true}

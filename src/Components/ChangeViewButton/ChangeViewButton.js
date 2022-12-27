@@ -9,7 +9,7 @@ function ChangeViewButton({view, text, active, size, isScheduleView}) {
 	} = useContext(HHContext)
 
 	if (isScheduleView) {
-		let nSize = 1200
+		let nSize = 2000
 		nSize += selectedSubjects.length * 60
 		size = `${nSize}px`
 	}
