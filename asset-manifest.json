@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dci-hh/static/css/main.a436b64b.css",
-    "main.js": "/dci-hh/static/js/main.c1ec2360.js",
+    "main.css": "/dci-hh/static/css/main.4b29c450.css",
+    "main.js": "/dci-hh/static/js/main.1a1dce14.js",
     "static/media/stars.png": "/dci-hh/static/media/stars.90c266f7d69f1ffb6137.png",
     "index.html": "/dci-hh/index.html",
-    "main.a436b64b.css.map": "/dci-hh/static/css/main.a436b64b.css.map",
-    "main.c1ec2360.js.map": "/dci-hh/static/js/main.c1ec2360.js.map"
+    "main.4b29c450.css.map": "/dci-hh/static/css/main.4b29c450.css.map",
+    "main.1a1dce14.js.map": "/dci-hh/static/js/main.1a1dce14.js.map"
   },
   "entrypoints": [
-    "static/css/main.a436b64b.css",
-    "static/js/main.c1ec2360.js"
+    "static/css/main.4b29c450.css",
+    "static/js/main.1a1dce14.js"
   ]
 }
