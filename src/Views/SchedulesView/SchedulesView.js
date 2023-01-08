@@ -7,11 +7,15 @@ import SubjectCard from '../../Components/SubjectCard/SubjectCard'
 import './SchedulesView.css'
 
 function SchedulesView() {
-	const { selectedSubjects } = useContext(HHContext)
+	const { 
+		selectedSubjects,
+		selectedProfessors
+	 } = useContext(HHContext)
 
 	
 	const body = {
-		"subjects": selectedSubjects
+		"subjects": selectedSubjects,
+		"professors": selectedProfessors
 	}
 	const {
 		data: schedules,
