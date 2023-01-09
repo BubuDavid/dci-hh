@@ -30,9 +30,6 @@ function SchedulesView() {
     },
 		body: JSON.stringify(body)
 	})
-
-	console.log(body)
-	console.log(schedules)
 	
 	return (
 		<div className='SchedulesView View'>
