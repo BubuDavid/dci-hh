@@ -4,3 +4,7 @@
 	align-items: center;
 	flex-direction: column;
 }
+
+.SplicedCards {
+	max-width: 65vw;
+}

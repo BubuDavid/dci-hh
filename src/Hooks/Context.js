@@ -6,6 +6,7 @@ const HHContext = createContext()
 function HHProvider(props) {
 	const [view, setView] = useState('main')
 	const [bgSize, setBgSize] = useState('100')
+	const [selectedProfessors, setSelectedProfessors] = useState({})
 
 	const {
 		data: subjectNames,
@@ -38,6 +39,24 @@ function HHProvider(props) {
 		return true
 	}
 
+	const toggleSelectionProfessor = (subject, clickedProfessor) => {
+		let newSelectedProfessors = {...selectedProfessors}
+
+		if (newSelectedProfessors[subject] && newSelectedProfessors[subject].includes(clickedProfessor)) {
+			let index = newSelectedProfessors[subject].indexOf(clickedProfessor)
+			newSelectedProfessors[subject].splice(index, 1)
+		} else {
+			if (newSelectedProfessors[subject] === undefined) {
+				newSelectedProfessors[subject] = [clickedProfessor]
+			} else {
+				newSelectedProfessors[subject].push(clickedProfessor)
+			}
+		}
+
+
+		setSelectedProfessors(newSelectedProfessors)
+	}
+
 	const goBack = () => {
 		setView('main')
 		setSearchWord('')
@@ -55,6 +74,7 @@ function HHProvider(props) {
 			searchWord, setSearchWord,
 			toggleSelectionSubject,
 			goBack,
+			selectedProfessors, setSelectedProfessors, toggleSelectionProfessor
 		}}>
 		{ props.children }
 	</HHContext.Provider>

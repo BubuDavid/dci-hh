@@ -5,6 +5,7 @@ import useFetchAPI from '../../Hooks/useFetchAPI'
 import ScheduleSection from '../../Components/ScheduleSectionComponents/ScheduleSection/ScheduleSection'
 import SubjectCard from '../../Components/SubjectCard/SubjectCard'
 import './SchedulesView.css'
+import ChangeViewButton from '../../Components/ChangeViewButton/ChangeViewButton'
 
 function SchedulesView() {
 	const { 
@@ -29,10 +30,18 @@ function SchedulesView() {
     },
 		body: JSON.stringify(body)
 	})
+
+	console.log(body)
+	console.log(schedules)
 	
 	return (
 		<div className='SchedulesView View'>
 			<Header />
+			<ChangeViewButton
+						view={"professorsView"}
+						text={"🦕 Regresar"}
+						active={true}
+			/>
 			{loading ?
 				<h3 className='message'>🚀 Estamos cargando, awanta... 🐱‍🚀</h3>
 			: null}
@@ -44,7 +53,7 @@ function SchedulesView() {
 				</div>
 			) : null}
 
-			{!loading && !schedules.there_are_combs ? 
+			{!loading && !schedules.there_are_combs && schedules.why_empty === 'COMBINATIONS'? 
 			<div className='SplicedCards message'>
 				<h3>{`😱 No existe ningún horario, estas dos materias se empalman 👇`}</h3>
 					<SubjectCard
@@ -54,12 +63,21 @@ function SchedulesView() {
 						subject={schedules?.result[1].NAME}
 					/>
 			</div>
+				: null}
+			
+
+			{!loading && !schedules.there_are_combs && schedules.why_empty === 'PROFESSORS'? 
+			<div className='SplicedCards message'>
+				<h3>{`😱 Oh no! Eliminaste demasiados profesores, no existe un horario con los profesores que dejaste disponibles, regresa e intenta otra combinación 👇`}</h3>
+			</div>
 			: null}
 			
 			{!loading && schedules.there_are_combs ?
-				<ScheduleSection
-					schedules={schedules}
-				/>
+				<>
+					<ScheduleSection
+						schedules={schedules}
+					/>
+				</>
 				: null}
 			
 		</div>

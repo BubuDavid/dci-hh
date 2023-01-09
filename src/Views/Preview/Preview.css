@@ -9,11 +9,11 @@
 	margin-right: 5rem;
 }
 
-.PreviewButtonSection button:not(:first-child) {
+/* .PreviewButtonSection button:not(:first-child) {
 	border-image: linear-gradient(to bottom right, #fd1892 0%, #b827fc 25%, #2c90fc 50%, #b8fd33 75%, #fec837 100%);
   border-image-slice: 1;
 	outline-width: 0;
-}
+} */
 
 .previewText {
 	color: white;

@@ -17,11 +17,8 @@ function Preview() {
 					active={true}
 				/>
 				<ChangeViewButton
-					view={'schedulesView'}
-					size={'100px'}
-					text={'👽 ¡Crear!'}
-					isScheduleView={true}
-					// active={true}
+					view={'professorsView'}
+					text={'👽 Siguiente'}
 				/>
 
 			</div>
