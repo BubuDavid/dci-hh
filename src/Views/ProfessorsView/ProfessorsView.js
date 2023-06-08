@@ -23,7 +23,7 @@ function ProfessorsView() {
 			</div>
 
 			<h2 className='neonText ProfessorsViewText'>
-				Estos son tus profesoras, puedes eliminar a quien quieras de tus horarios solo dando click en su nombre. Los que están <span style={{color:'#CE1212'}}>en rojo</span> son los que <span style={{textDecoration:'underline'}}>NO QUIERES</span> en tus horarios.
+				Estos son tus profesores y profesoras, puedes eliminar a quien quieras de tus horarios solo dando click en su nombre. Después de darles click, aparecerán <span style={{color:'#CE1212'}}>en rojo</span> indicando que <span style={{textDecoration:'underline'}}>NO APARECERÁN</span> en tus horarios.
 			</h2>
 
 			<ProfessorsList />
