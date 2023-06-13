@@ -1,0 +1,7 @@
+fastapi
+python-decouple
+pyairtable
+starlette
+pydantic
+requests
+uvicorn[standard]

@@ -1,3 +1,5 @@
+![DCI Logo](https://i.imgur.com/BWjEV8J.png)
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -5,7 +7,19 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
-![DCI Logo](https://i.imgur.com/BWjEV8J.png)
+# API - Hacedor de Horarios
+- *Project made with FastAPI*
+- The frontend can be found in [this repo](https://github.com/BubuDavid/DCI_hacedor_horarios_frontend)
+
+# How is it conformed?
+- 🗃️ Data Part:
+	- ⛏️ Web Scraping
+	- 🐼 Data Transformation
+	- 🧹 Data Cleansing
+	- 📤 Export the data
+- ⌨️ Algorithm:
+	- ...
+- 🍕 API with FastAPI
 
 # DCI Scholar Scheduler
 
@@ -21,8 +35,8 @@ This tool is currently being used by over 1000 students at our school, making it
 
 ## Technologies Used
 
-- ReactJS for the frontend
-- FastAPI for the backend [You can find the repo here!](https://github.com/BubuDavid/DCI_hacedor_horarios_backend)
+- ReactJS for the frontend [You can find the repo here!](https://github.com/BubuDavid/DCI_hacedor_horarios_backend)
+- FastAPI for the backend 
 
 ## Getting Started
 
@@ -31,29 +45,30 @@ This tool is currently being used by over 1000 students at our school, making it
 - Node.js
 - Python
 
-### Installation
+
+### Installation (Backend Only)
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/BubuDavid/dci-hh.git
+   git clone https://github.com/BubuDavid/DCI_hacedor_horarios_backend.git
    ```
-2. Install NPM packages
+2. Install Python packages
    ```sh
-   npm install
+   python -m venv venv
+   source ./venv/bin/activate
+   pip install -r requirements.txt
    ```
-3. You need to clone and install the backend part too, [click here to get the information](https://github.com/BubuDavid/DCI_hacedor_horarios_backend).
 
 4. Create an .env file with the following variables:
    ```sh
-   REACT_APP_API_NAMES_URL = URL of the endpoint in the backend for getting the names of the subjects.
-   REACT_APP_API_PROFESSORS = URL of the endpoint in the backend for getting the names of the professors.
-   REACT_APP_API_SCHEDULES = URL of the endpoint in the backend for getting the schedules
-   REACT_APP_API_URL = URL of the base endpoint for the backend
+   AIRTABLE_API_KEY = The airtable Token where is stored the database.
+   AIRTABLE_BASE_ID = The airtable base id of the data.
+   AIRTABLE_TABLE_NAME = The airtable name of the table witht the data
    ```
 
 5. Start the server
    ```sh
-   npm start
+   uvicorn main:app --reload
    ```
    
 
@@ -75,22 +90,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 David Pedroza Segoviano - david.pedroza.segoviano@gmail.com
 
-Project Link: [https://github.com/BubuDavid/dci-hh](https://github.com/BubuDavid/dci-hh)
+Project Link: [https://github.com/BubuDavid/DCI_hacedor_horarios_backend](https://github.com/BubuDavid/DCI_hacedor_horarios_backend)
 
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/BubuDavid/dci-hh.svg?style=for-the-badge
-[contributors-url]: https://github.com/BubuDavid/dci-hh.git/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/BubuDavid/dci-hh.svg?style=for-the-badge
-[forks-url]: https://github.com/BubuDavid/dci-hh.git/network/members
-[stars-shield]: https://img.shields.io/github/stars/BubuDavid/dci-hh.svg?style=for-the-badge
-[stars-url]: https://github.com/BubuDavid/dci-hh.git/stargazers
-[issues-shield]: https://img.shields.io/github/issues/BubuDavid/dci-hh.svg?style=for-the-badge
-[issues-url]: https://github.com/BubuDavid/dci-hh.git/issues
-[license-shield]: https://img.shields.io/github/license/BubuDavid/dci-hh.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/BubuDavid/DCI_hacedor_horarios_backend.svg?style=for-the-badge
+[contributors-url]: https://github.com/BubuDavid/DCI_hacedor_horarios_backend.git/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/BubuDavid/DCI_hacedor_horarios_backend.svg?style=for-the-badge
+[forks-url]: https://github.com/BubuDavid/DCI_hacedor_horarios_backend.git/network/members
+[stars-shield]: https://img.shields.io/github/stars/BubuDavid/DCI_hacedor_horarios_backend.svg?style=for-the-badge
+[stars-url]: https://github.com/BubuDavid/DCI_hacedor_horarios_backend.git/stargazers
+[issues-shield]: https://img.shields.io/github/issues/BubuDavid/DCI_hacedor_horarios_backend.svg?style=for-the-badge
+[issues-url]: https://github.com/BubuDavid/DCI_hacedor_horarios_backend.git/issues
+[license-shield]: https://img.shields.io/github/license/BubuDavid/DCI_hacedor_horarios_backend.svg?style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/davidpedrozasegoviano/
 [product-screenshot]: static/images/screenshot.png
