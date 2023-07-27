@@ -98,7 +98,6 @@ function getHeight(time) {
 	start = fromHourToNumber(start)
 	end = fromHourToNumber(end)
 
-	console.log(start, end)
 	
 	let diff = end - start
 	return diff * 60

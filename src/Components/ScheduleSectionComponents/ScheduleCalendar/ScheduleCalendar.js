@@ -15,7 +15,6 @@ function ScheduleCalendar({ schedule }) {
 	}
 	const events = getEventsForCalendar(schedule, timeSlots, weekDays.length, lessThan660)
 
-	console.log(events)
 	return (
 		events.length > 0 ? (
 			<div className='ScheduleCalendar'>
