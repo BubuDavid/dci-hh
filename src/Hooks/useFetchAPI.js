@@ -6,6 +6,7 @@ function useFetchAPI(requestParams) {
 	const [error, setError] = useState(false)
 	const { url } = requestParams
 
+
 	useEffect(() => {
 		const getData = async (url, requestParams) => {
 			try {

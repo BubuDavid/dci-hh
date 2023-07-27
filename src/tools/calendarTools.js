@@ -78,11 +78,28 @@ function getRow(time, timeSlots) {
 	}
 }
 
+function fromHourToNumber(hour) {
+	if (hour.includes(':')) {
+		let hourNumber = Number(hour.split(':')[0])
+		let fraction = Number(hour.split(':')[1]) / 60
+		return hourNumber + fraction
+	} 
+
+	return Number(hour)
+}
+
 function getHeight(time) {
 	if (!time) return time
 
 	let start = time.split('-')[0]
 	let end = time.split('-')[1]
+	
+	// transform start and end to number
+	start = fromHourToNumber(start)
+	end = fromHourToNumber(end)
+
+	console.log(start, end)
+	
 	let diff = end - start
 	return diff * 60
 }
